@@ -1,3 +1,15 @@
+:root {
+--primery-text--: #fff;
+--title-text--: #000;
+--home--: #2E2F42;
+--description--: #434455;
+--pouring--: #4D5AE5;
+--game--: #E7E9FC;
+}
+body {
+    background-color: #fff;
+    color: #000; 
+}
 .list {
     list-style: none;
 }
@@ -12,24 +24,23 @@
     color: #F4F4FD;
     background-color: #4D5AE5;
 }
-.menu-link:focus{
-    color: #F4F4FD;
-    background-color: #4D5AE5;   
+.test:hover,
+.test:focus {
+    color: green;  
 }
-.text {
-    font-family: 'Raleway', sans-serif;
+.list, .link, .menual, .text {
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
 font-size: 16px;
-line-height: 1,5;
+line-height: 1.5;
 letter-spacing: 0.02em;
-color: #434455;
+color:var(--description--);
 }
 .logo {
     font-family: 'Raleway', sans-serif;
-font-style: normal;
 font-weight: 800;
 font-size: 18px;
-line-height: 24px;
+line-height: 1.3;
 display: flex;
 align-items: center;
 letter-spacing: 0.03em;
@@ -37,82 +48,83 @@ text-transform: uppercase;
 }
 .roboto {
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1,5;   
+    line-height: 1.5;   
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color:var(--home--);
 }
-.roboto-mous, .mail, .phon {
+.roboto-mous, .test, .mail, .phon {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1,5;
-    letter-spacing: 0.02em;
-    color: #434455;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+    color:var(--description--);
 }
 .roboto-menu, .menu-link {
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 font-size: 16px;
-line-height: 1,5;
+line-height: 1.5;
 display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.04em;
-color: #4D5AE5;
+color:var(--pouring--);
 }
-.menul {
+.list, .link, .menul {
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 font-size: 20px;
-line-height: 1,2;
+line-height: 1.2;
 letter-spacing: 0.02em;
-color: #2E2F42;
+color:var(--home--);
 flex: none;
 order: 0;
 flex-grow: 0; 
 }
 .footer {
-    background-color: #2E2F42;
+    background-color:var(--home--);
 }
 .game {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
 font-size: 16px;
 line-height: 1,5;
 letter-spacing: 0.02em;
-color: #E7E9FC;
+color:var(--game--);
 
 }
 .home {
-    background-color: #2E2F42;
+    background-color:var(--home--);
 }
 .H {
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 font-size: 56px;
 line-height: 60px;
 text-align: center;
 letter-spacing: 0.02em;
-color: #FFFFFF;
+color:var(--primery-text--);
 }
 .blue {
-    color: #4D5AE5;
+    color:var(--pouring--);
 }
+
 .black {
-   color: #2E2F42;
+   color:var(--home--);
 }
 .blac {
-    color: #F4F4FD;
+    color:var(--game--);
 }
 .menuall {
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 font-size: 20px;
-line-height: 1,2;
+line-height: 1.2;
 letter-spacing: 0.02em;
-color: #2E2F42;
+color:var(--home--);
 flex: none;
 order: 0;
 flex-grow: 0
@@ -121,48 +133,60 @@ flex-grow: 0
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 font-size: 16px;
-line-height: 1,5;
+line-height: 1.5;
 letter-spacing: 0.02em;
-color: #434455;
+color:var(--description--);
 flex: none;
 order: 1;
 flex-grow: 0;
 }
 .what {
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 font-size: 36px;
-line-height: 1,1;
+line-height: 1.1;
 text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-color: #2E2F42;
+color:var(--home--);
 }
 .name {
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 font-size: 20px;
-line-height: 1,2;
+line-height: 1.2;
 text-align: center;
 letter-spacing: 0.02em;
-color: #2E2F42;
+color:var(--home--);
 flex: none;
 order: 0;
 flex-grow: 0;
 }
 .prof {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
 font-size: 16px;
-line-height: 1,5;
+line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
-color: #434455;
+color:var(--description--);
 flex: none;
 order: 1;
 flex-grow: 0;
 }
-.menu:hover,
-.menu:focus {
-    color: aqua;
+.HH {
+    background:var(--pouring--);
+}
+.order {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+color:var(--primery-text--);
+flex: none;
+order: 0;
+flex-grow: 0;
 }
