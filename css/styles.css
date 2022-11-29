@@ -213,7 +213,7 @@ flex-grow: 0;
 }
 .prof {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 text-align: center;
@@ -235,4 +235,24 @@ color:var(--primery-text--);
 flex: none;
 order: 0;
 flex-grow: 0;
+}
+.menu-itm {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: var(--home--);
+flex: none;
+order: 1;
+flex-grow: 0
+}
+.mail {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: var(--description--);
+
 }
