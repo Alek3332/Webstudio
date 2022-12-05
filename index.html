@@ -14,7 +14,8 @@
 </head>
 <body>
     <header class="page-header">
-    <nav class="conteiner menu-nav">
+        <div class="conteiner">
+    <nav class="menu-nav">
         <a class="logo link" href=""><span class="blue">web</span><span class="black">studio</span></a>
         <ul class="menu list">
             <li class="menu-li">
@@ -28,20 +29,23 @@
             </li>
         </ul>
     <ul class="menu-mail list">
-        <li><a class="mail link" href="info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="mail link" href="tel+110001111111">+11 (000) 111-11-11</a></li>
+        <li class="menu-info"><a class="mail link" href="info@devstudio.com">info@devstudio.com</a></li>
+        <li class="menu-info"><a class="mail link" href="tel+110001111111">+11 (000) 111-11-11</a></li>
     </ul>
     </nav>
-    </header>
+    </div>
+</header>
 </head>
     <main>  
-    <section class="home list">
-        <h1 class="H list">Effective Solutionsfor <br>for Your Business</br></h1>
-        <a href="" class="butn link">Order Service</a>
+    <section class="section home list">
+        <div class="conteiner">
+        <h1 class="solution list">Effective Solutionsfor <br>for Your Business</br></h1>
+        <button class="butn link" type="button">Order Service</button>
+    </div>
     </section>
     <section class="section">
         <div class="conteiner">
-        <h2></h2>
+        <h2 class="opacity"></h2>
         <ul class="menu-all list">
             <li class="menu-des">
                 <h3 class="menuall">Strategy</h3>
@@ -62,8 +66,8 @@
         </ul>
     </div>
     </section>
-    <section class="section conteiner">
-        <div class="conteiner"></div>
+    <section class="section">
+        <div class="conteiner">
         <h2 class="what">What are we doing</h2>
         <ul class="comput list"> 
             <li class="comp"><img src="./images/computer.jpg" alt="computer" width="360"/></li>
@@ -72,35 +76,70 @@
         </ul>
     </div>
     </section>
-    <section class="section conteiner">
+    <section class="sensey section">
+        <div class="conteiner">
         <h2 class="what">Our Team</h2>
         <ul class="proffi list">
+            
             <li class="menu-prof">
-                <img src="./images/mark.jpg" alt="Mark" width="264" height="260"/>
-                <h3 class="name">Mark Guerrero</h3>
+                <article class="image">
+                    <div class="div-image">
+                        <img src="./images/mark.jpg" alt="Mark" width="264" height="260"/> 
+                    </div>
+                <div class="pagers">
+                    <h3 class="name">Mark Guerrero</h3>
                 <p class="prof">Product Designer</p>
+                </div>
+                </article>
             </li>
+            
                <li class="menu-prof">
-                <img src="./images/tom.jpg" alt="Tom"/>
-                <h3 class="name">Tom Ford</h3>
+                <article class="image">
+                    <div class="div-image">
+                        <img src="./images/tom.jpg" alt="Tom"/>
+                    </div>
+                    <div class="pagers">
+                        <h3 class="name">Tom Ford</h3>
                 <p class="prof">Frontend Developer</p>
-               </li> 
+                    </div>
+                </article>
+            
+               </li>
+               
             <li class="menu-prof">
-                <img src="./images/camila.jpg" alt="Camila"/>
-                <h3 class="name">Camila Garcia</h3>
+                <article class="image">
+                    <div class="div-image">
+                        <img src="./images/camila.jpg" alt="Camila"/>
+                    </div>
+                    <div class="pagers">
+                        <h3 class="name">Camila Garcia</h3>
                 <p class="prof">Marketing</p>
+                    </div>
+                </article>
             </li>
+            
             <li class="menu-prof">
-                <img src="./images/daniel.jpg" alt="Daniel">
-                <h3 class="name">Daniel Wilson</h3>
+                <article class="image">
+                    <div class="div-image">
+                        <img src="./images/daniel.jpg" alt="Daniel">
+                    </div>
+                    <div class="pagers">
+                        <h3 class="name">Daniel Wilson</h3>
                 <p class="prof">UI Designer</p>
+                    </div>
+                </article>
             </li>
         </ul>
+    </div>
     </section>
 </main>
 <footer class="footer">
+    <div class="conteiner">
+        <div class="footer-menu">
     <a class="logo link" href=""><span class="blue">web</span><span class="whit">studio</span></a>
     <p class="game">Increase the flow of customers and</br> sales for your business with digital</br> marketing & growth solutions.</p>
+</div>
+    </div>
 </footer>
 </body>
 </html>
