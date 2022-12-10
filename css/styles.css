@@ -5,6 +5,7 @@
 --description--: #434455;
 --pouring--: #4D5AE5;
 --game--: #E7E9FC;
+--customs--:#4D5AE5;
 }
 body {
     background-color: #fff;
@@ -43,6 +44,10 @@ color: #4D5AE5;
 }
 .mail:active {
     color: #4D5AE5;
+}
+.page-header {
+    background: #FFFFFF;
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -103,6 +108,7 @@ flex: none;
 order: 0;
 flex-grow: 0;
 margin: 0;
+margin-bottom: 8px;
 }
 .text {
     font-family: 'Roboto', sans-serif;
@@ -216,7 +222,7 @@ color:var(--home--);
 flex: none;
 order: 0;
 flex-grow: 0;
-margin-top: 0;
+margin-top: 8px;
 margin-bottom: 8px;
 }
 .deskription {
@@ -318,6 +324,14 @@ color: var(--description--);
    padding-left: 15px;
    padding-right: 15px;
 }
+.conteiner-footer {
+    display: flex;
+    margin-left: auto;
+   margin-right: auto; 
+   width: 1158px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
 /*.conteiner-1 {
     display: flex;
     justify-content: space-around;
@@ -329,10 +343,10 @@ color: var(--description--);
    padding-right: 15px;
    flex-wrap: wrap;
 }*/
-.section {
+/*.section {
     padding-top: 120px;
     padding-bottom: 120px;
-}
+}*/
 .section-hero {
     padding-top: 192px;
     padding-bottom: 192px;
@@ -342,10 +356,10 @@ color: var(--description--);
     margin-right: auto;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
+    background-size:color;
     background-image:linear-gradient(to right,
-    rgba(0, 0, 0, 0.25),
-    rgba(0, 0, 0, 0.25)),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)),
     url(../images/people-office\ \(1\).jpg); 
 }
 
@@ -373,6 +387,7 @@ color: var(--description--);
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    padding-top: 120px;
 }
 .menu-des {
     width: 264px;
@@ -417,18 +432,26 @@ color: var(--description--);
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin-right: px;
+    margin-right: -24px;
     margin-top: px;
 }
 .menu-prof {
-    width: calc((100%-72)4);
+    width: calc((100% - 72px) / 4);
     margin-right: 24px;
+    background: #FFFFFF;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
    /* margin-top: 72px;*/
 }
 .menu-prof:nth-child(4n){
     margin-right: 0;
 }
+.menu-prof {
+    width: 264px;
+    height: 260px;
+}
 .sensey {
+    height: 788px;
     padding-top: 120px;
     padding-bottom: 120px;
     background: #F4F4FD;
@@ -449,6 +472,11 @@ color: var(--description--);
     padding: 0;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+.img:hover {
+    background-color: var(--customs--);
+    background-blend-mode: soft-light;
+mix-blend-mode: normal;
+}
 .image {
     background: #FFFFFF;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -456,6 +484,9 @@ border-radius: 0px 0px 4px 4px;
 }
 .pagers {
    padding: 32px 16px;
+   background: #FFFFFF;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
 }
 .card-content {
     padding: 32px 16px;
@@ -494,7 +525,6 @@ background-color: #F4F4FD;
     height: 40px;
     width: 40px;
     margin-top: 12px;
-    margin-right: 20px;
     background-repeat: no-repeat;
     border-radius: 50%; 
     background-color: #4D5AE5;
@@ -517,6 +547,11 @@ box-sizing: border-box;
 }
 .firm-icon {
     margin: 16px 32px;
+    fill: #8E8F99;
+}
+.firms:hover,
+.firms:focus {
+    border: 1px solid #404BBF;
 }
 .customs-icon {
     display: inline-block;
@@ -536,7 +571,9 @@ margin-right: 17px;
     margin-right: auto;
 }
 .media {
-    display: block;
+    display: flex;
+    margin: 0;
+    margin-bottom: 16px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-weight: 600;
@@ -550,7 +587,9 @@ color:var(--primery-text--);
     margin: auto;
 }
 .media-social {
-    display: inline-flex; 
+    display: inline-flex;
+    justify-content: center;
+    gap: 16px;
 }
 .social {
     padding: 0;
@@ -559,12 +598,26 @@ color:var(--primery-text--);
     border: none;
     height: 40px;
     width: 40px;
-    margin-right: 16px;
     background-repeat: no-repeat;
     border-radius: 50%;  
     background-color:  rgba(255, 255, 255, 0.1);
 }
+.social:hover {
+    background: #31D0AA;
+}
 .game-over {
-    padding-left: 540px;
-    
+    padding-left: 120px;
+    margin: 0;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.firm-icon:hover,
+.firm-icon:focus {
+    fill: var(--customs--);
+}
+.firm-icon:active {
+    fill: var(--customs--);
 }
