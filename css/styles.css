@@ -73,12 +73,13 @@ color: var(--description--);
 }
 .butt-on {
     margin-left: 24px;
-    margin-bottom: 72px;
+   /* margin-bottom: 72px;*/
 }
 .butt, .buttonn {
     padding: 12px 24px;
    border: 1px solid #fff;
     border-radius: 4px;
+    margin-bottom: 72px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 font-size: 16px;
@@ -135,7 +136,7 @@ margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 font-size: 16px;
-line-height: 1,5;
+line-height: 1.5;
 letter-spacing: 0.02em;
 color:var(--game--);
 
@@ -358,11 +359,15 @@ color: var(--description--);
     background-position: center;
     background-size:color;
     background-image:linear-gradient(to right,
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)),
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
     url(../images/people-office\ \(1\).jpg); 
 }
-
+ .menu-img:hover,
+ .menu-img:focus {
+    background-color: border 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+ }
 
 .section-img {
     padding-bottom: 120px;
@@ -591,6 +596,11 @@ color:var(--primery-text--);
     justify-content: center;
     gap: 16px;
 }
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
 .social {
     padding: 0;
     margin: 0;
@@ -620,4 +630,8 @@ color:var(--primery-text--);
 }
 .firm-icon:active {
     fill: var(--customs--);
+}
+.pag-icon:hover,
+.pag-icon:focus {
+    background-color: #31D0AA;
 }
