@@ -24,7 +24,7 @@ img {
 }
 .buttonn:hover, 
 .button:focus {
-    color: #F4F4FD;
+    color: #E7E9FC;
     background-color:var(--pouring--);
     cursor: pointer;
 }
@@ -357,10 +357,10 @@ color: var(--description--);
     margin-right: auto;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:color;
+    background-size: border-box;
     background-image:linear-gradient(to right,
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)),
+    rgba(0, 0, 0, 0.705),
+    rgba(0, 0, 0, 0.705)),
     url(../images/people-office\ \(1\).jpg); 
 }
  .menu-img:hover,
@@ -393,6 +393,7 @@ color: var(--description--);
     flex-wrap: wrap;
     gap: 24px;
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 .menu-des {
     width: 264px;
@@ -549,6 +550,7 @@ background-color: #F4F4FD;
     border: 1px solid #8E8F99;
 border-radius: 4px;
 box-sizing: border-box;
+fill:#8E8F99
 }
 .firm-icon {
     margin: 16px 32px;
@@ -556,6 +558,9 @@ box-sizing: border-box;
 }
 .firms:hover,
 .firms:focus {
+    border: 1px solid #404BBF;
+}
+.firms:active {
     border: 1px solid #404BBF;
 }
 .customs-icon {
@@ -612,7 +617,8 @@ color:var(--primery-text--);
     border-radius: 50%;  
     background-color:  rgba(255, 255, 255, 0.1);
 }
-.social:hover {
+.social:hover,
+.social:focus {
     background: #31D0AA;
 }
 .game-over {
