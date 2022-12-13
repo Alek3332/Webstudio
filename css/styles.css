@@ -23,7 +23,7 @@ img {
     height: auto;
 }
 .buttonn:hover, 
-.button:focus {
+.buttonn:focus {
     color: #E7E9FC;
     background-color:var(--pouring--);
     cursor: pointer;
@@ -359,8 +359,8 @@ color: var(--description--);
     background-position: center;
     background-size: border-box;
     background-image:linear-gradient(to right,
-    rgba(0, 0, 0, 0.705),
-    rgba(0, 0, 0, 0.705)),
+    rgba(46, 47, 66, 0.699),
+    rgba(46, 47, 66, 0.699)),
     url(../images/people-office\ \(1\).jpg); 
 }
  .menu-img:hover,
@@ -416,21 +416,10 @@ color: var(--description--);
 .menu-img:nth-child(3n){
     margin-right: 0;
 }
-/*:nth-last-child(-n + 3){
-    margin-right: 0;
-}*/
 .comput {
     display: flex;
     flex-wrap: wrap;
-}
-.comp {
-    width: calc((100%-48px)/3);
-    margin-right: 24px;
-
-   /* margin-top: 72px;*/
-}
-.comp:nth-child(n) {
-    margin-right: 0;
+    gap: 24px;
 }
 .proffi {
     padding: 0;
@@ -570,12 +559,6 @@ align-items: flex-start;
 padding: 0px;
 gap: 24px;
 margin-right: 17px;
-    /*padding: 0;
-    margin: 0;
-    list-style: none;
-    display: inline-block;
-    flex-wrap: wrap;
-    margin-right: 24px;*/
 }
 .customs-icon:last-child {
     margin-right: auto;
@@ -632,9 +615,6 @@ color:var(--primery-text--);
 }
 .firm-icon:hover,
 .firm-icon:focus {
-    fill: var(--customs--);
-}
-.firm-icon:active {
     fill: var(--customs--);
 }
 .pag-icon:hover,
