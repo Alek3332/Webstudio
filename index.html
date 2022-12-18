@@ -40,7 +40,16 @@
     <section class="section-hero home list">
         <div class="conteiner">
         <h1 class="solution list">Effective Solutionsfor <br>for Your Business</br></h1>
-        <button class="butn link" type="button">Order Service</button>
+        <button class="butn link" type="button" data-modal-open>Order Service</button>
+        <ul class="model is-hidden list" data-modal>
+            <li class="model-back">
+                <button class="close" data-modal-close>
+                    <svg class="close-icon" width="8px" height="8px">
+                        <use href="./images/close-defs.svg#icon-close-black-18dp"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
     </div>
     </section>
     <section class="section">
@@ -334,6 +343,7 @@
     </div>
    </div>
 </footer>
+<script src="./modal.js"></script>
 </body>
 </html>
      

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css"/>
+</head>
+<body>
+    <header class="page-header">
+        <div class="conteiner">
+    <nav class="menu-nav">
+        <a class="logo link" href=""><span class="blue">web</span><span class="black">studio</span></a>
+        <ul class="menu list">
+            <li class="menu-li">
+                <a class="menu-itm link" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-li">
+                <a class="menu-itm link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-li">
+                <a class="menu-itm link" href="">Contacts</a>
+            </li>
+        </ul>
+    <ul class="menu-mail list">
+        <li class="menu-info"><a class="mail link" href="info@devstudio.com">info@devstudio.com</a></li>
+        <li class="menu-info"><a class="mail link" href="tel+110001111111">+11 (000) 111-11-11</a></li>
+    </ul>
+    </nav>
+    </div>
+</header>
+</head>
+<main> 
+    <section class="section-hero home list">
+        <div class="conteiner">
+        <h1 class="solution list">Effective Solutionsfor <br>for Your Business</br></h1>
+        <button class="butn link" type="button"  data-modal-open>Order Service</button>
+    </div>
+    </section>
+    <ul class="model is-hidden list" data-modal>
+        <li class="model-back">
+            <button class="close" data-modal-close>
+                <svg class="close-icon" width="8px" height="8px">
+                    <use href="./images/close-defs.svg#icon-close-black-18dp"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</main>
+<script src="./modal.js"></script>
+</body>
