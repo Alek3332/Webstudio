@@ -792,7 +792,7 @@ border-radius: 4px;
 }
 .mod-1 {
     display: flex;
-    flex-direction: column;
+   flex-direction: column;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -887,11 +887,13 @@ background-position: 8px 8px;
 .svg-icon {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 15px;
     align-items: center;
     fill: var(--title-text--);
 }
-
+.frame {
+    position: relative;
+}
 input[type=tel] {
     width: 360px;
     box-sizing: border-box;
