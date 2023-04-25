@@ -925,9 +925,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--customs--);
     fill: var(--customs--);
 }
-.nam:hover + .text-input {
+/*.nam:hover + .text-input {
     color: var(--customs--);
-}
+}*/
 .nam:hover {
     color: var(--customs--);
 }
