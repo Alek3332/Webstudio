@@ -736,9 +736,20 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #000;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-icon:hover,
+/*.close-icon:hover,
 .close-icon:focus {
     fill:var(--primery-text--);
+}
+/*.close:hover + .close-icon {
+    background-color:var(--customs--);
+    display: inline-block;
+    margin: auto;
+    fill: #000;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}*/
+.close:hover svg use {
+    fill:var(--primery-text--);
+    background-color:var(--customs--);
 }
 .leave {
     position: absolute;
@@ -899,6 +910,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin: 0 auto;
     padding-left: 40px;
     display: block;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-icon {
     position: absolute;
@@ -914,7 +926,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .svg-icon1 {
     position: absolute;
-    top: 44%;
+    top: 45%;
   left: 16px;
   width: 12px;
   height: 12px;
@@ -922,10 +934,12 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 .text-input:hover + .svg-icon1 {
     color: var(--customs--);
     fill: var(--customs--);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-input:hover + .svg-icon {
     color: var(--customs--);
     fill: var(--customs--);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*.nam:hover + .text-input {
     color: var(--customs--);
@@ -1042,4 +1056,24 @@ flex: none;
 order: 0;
 flex-grow: 0;
 
+}
+.checkbox {
+    appearance: none;
+    
+}
+.icon-chek {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 2px;
+
+    background-color: #fff;
+}
+.checkbox:checked + .icon-chek {
+    background-image: url(../images/Property\ 1=Default\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box;
+    border-color: none;
 }
