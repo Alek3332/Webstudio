@@ -795,6 +795,7 @@ border-radius: 4px;
 }
 .mod-1 {
     display: flex;
+    flex-wrap: wrap;
    flex-direction: column;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
@@ -814,6 +815,7 @@ font-size: 18px;
 }
 .mod-1 label {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 5px;
     font-family: 'Roboto', sans-serif;
 font-style: normal;
@@ -923,7 +925,10 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--customs--);
     fill: var(--customs--);
 }
-.mod-1:hover {
+.nam:hover + .text-input {
+    color: var(--customs--);
+}
+.nam:hover {
     color: var(--customs--);
 }
 .frame {
