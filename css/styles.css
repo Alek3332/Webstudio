@@ -816,7 +816,8 @@ font-size: 18px;
 .mod-1 label {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 5px;
+    margin: 4px;
+    margin-bottom: 4px;
     font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -833,6 +834,7 @@ color: #8E8F99;
     text-indent: 38px;
 }
 textarea {
+    outline: none;
     resize: none;
     width: 360px;
     height: 120px;
@@ -912,7 +914,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .svg-icon1 {
     position: absolute;
-    top: 45.2%;
+    top: 44%;
   left: 16px;
   width: 12px;
   height: 12px;
@@ -930,6 +932,12 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }*/
 .nam:hover {
     color: var(--customs--);
+}
+.com:hover {
+    color: var(--customs--);
+}
+.textarea:hover {
+    border: 1px solid var(--customs--)
 }
 .frame {
     position: relative;
