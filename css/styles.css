@@ -37,7 +37,7 @@ img {
 }
 .menu-itm:hover,
 .menu-itm:focus {
-    color:var(--description--); 
+    color: #4D5AE5; 
 }
 .menu-itm:active{
 color: #4D5AE5;
@@ -289,6 +289,7 @@ flex: none;
 order: 1;
 flex-grow: 0;
 margin: 0;
+margin-top: 8px;
 }
 .menu-itm {
     display: block;
@@ -304,6 +305,7 @@ color: var(--home--);
 flex: none;
 order: 1;
 flex-grow: 0;
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-itm {
     position: relative;   
@@ -318,8 +320,12 @@ top: 70px;
     background-color: var(--pouring--);
     border-radius: 2px;
     transform: scaleX(0);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-itm:active::before {
+    transform: scaleX(1);
+}
+.menu-itm:hover::before {
     transform: scaleX(1);
 }
 .menu-info {
@@ -554,15 +560,15 @@ background-color: #F4F4FD;
 }
 .des1::before {
     background-size: 59px;
-    background-image: url(../images/Vector.svg);
+    background-image: url(../images/antenna\ 1.svg);
 }
 .des2::before {
     background-size: 61px;
-    background-image: url(../images/Vector\ \(1\).svg);
+    background-image: url(../images/clock\ 1.svg);
 }
 .des3::before {
     background-size: 50px;
-    background-image: url(../images/Vector\ \(2\).svg);
+    background-image: url(../images/diagram\ 1.svg);
 }
 .des4::before {
     background-size: 64px;
@@ -616,7 +622,8 @@ box-sizing: border-box;
     border: 1px solid #404BBF;
 }
 .customs-icon {
-    display: inline-block;
+    width: 168px;
+    /*display: inline-block;*/
 flex-direction: row;
 align-items: flex-start;
 padding: 0px;
@@ -682,7 +689,7 @@ color:var(--primery-text--);
 }
 .pag-icon:hover,
 .pag-icon:focus {
-    background-color: #31D0AA;
+    background-color: rgba(64, 75, 191, 1);
 }
 .model {
     position: absolute;
