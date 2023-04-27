@@ -859,6 +859,7 @@ font-size: 18px;
 .mod-1 label {
     display: flex;
     flex-wrap: wrap;
+    gap: 4px;
     /*margin-bottom: 4px;*/
     font-family: 'Roboto', sans-serif;
 font-style: normal;
@@ -879,6 +880,7 @@ color: #8E8F99;
     text-indent: 38px;
 }
 textarea {
+    padding-left: 16px;
     outline: none;
     resize: none;
     width: 360px;
@@ -910,7 +912,7 @@ align-items: flex-start;
 padding: 16px 32px;
 gap: 10px;
 left: 50%;
-    top: 112%;
+    top: 111%;
     transform: translate(-50%, -50%);
     width: 169px;
     height: 56px;
