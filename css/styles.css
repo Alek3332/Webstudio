@@ -78,11 +78,11 @@ color: var(--description--);
 flex-direction: row;
 align-items: flex-start;
 gap: 24px;
-
 }
-.butt-on {
+ul.butt.list {
     margin-bottom: 72px;
 }
+
 .buttonn {
     padding: 12px 24px;
     border: 1px solid #E7E9FC;
@@ -185,8 +185,8 @@ letter-spacing: 0.02em;
 color:var(--primery-text--);
 }
 .list {
-    padding: 0;
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 .butn:hover,
