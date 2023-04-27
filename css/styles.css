@@ -699,10 +699,16 @@ color:var(--primery-text--);
 .model {
     position: absolute;
     background-color: rgba(46, 47, 66, 0.4);
-    width: 100%;
+    height: 584px;
+width: 408px;
+left: 516px;
+top: 80px;
+border-radius: 4px;
+
+    /*width: 100%;
     height: 102%;
     left: 0;
-    top: 0;
+    top: 0;*/
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .model.is-hidden {
@@ -712,7 +718,7 @@ color:var(--primery-text--);
 .model-back {
     position: absolute;
     width: 408px;
-    height: 576px;
+    height: 584px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -765,17 +771,21 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .leave {
     position: absolute;
-width: 360px;
-height: 24px;
+    /*height: 24px;
+    width: 360px;
+    left: 540px;
+    top: 152px;*/
+    border-radius: nullpx;
+    
 
 
 
-left: 50%;
+/*left: 50%;
     top: 18%;
     transform: translate(-50%, -15%);
 
 /* Body Medium */
-
+margin: 72px 24px 488px 24px;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 500;
@@ -790,15 +800,14 @@ letter-spacing: 0.02em;
 
 color: var(--title-text--);
 }
-/*.mod {
-    position: absolute;
-    width: 100%;
+.mod {
+    height: 584px;
+width: 408px;
+left: 516px;
+top: 80px;
+border-radius: 4px;
 
-    left: 0;
-    top: 0;
-    margin-left: auto;
-    margin-right: auto;
-}*/
+}
 .model-bac {
     display: flex;
 flex-direction: column;
@@ -839,8 +848,7 @@ font-size: 18px;
 .mod-1 label {
     display: flex;
     flex-wrap: wrap;
-    margin: 4px;
-    margin-bottom: 4px;
+    /*margin-bottom: 4px;*/
     font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -852,6 +860,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 color: #8E8F99;
+}
+.nam {
+    margin-bottom: 4px;
 }
 .frame input::placeholder {
     text-indent: 38px;
@@ -1088,4 +1099,8 @@ border-radius: 2px;
     background-size: contain;
     background-origin: border-box;
     border-color: none;
+}
+.send {
+    width: 100%;
+    height: 100%;
 }
