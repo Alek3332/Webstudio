@@ -825,14 +825,14 @@ letter-spacing: 0.02em;
 
 color: var(--title-text--);
 }
-.mod {
+
    /* height: 584px;
 width: 408px;
 left: 516px;
 top: 80px;
 border-radius: 4px;*/
 
-}
+
 .model-bac {
     display: flex;
 flex-direction: column;
