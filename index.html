@@ -20,7 +20,7 @@
         <a class="logo link" href=""><span class="blue">web</span><span class="black">studio</span></a>
         <ul class="menu list">
             <li class="menu-li">
-                <a class="menu-itm link" href="./index.html">Studio</a>
+                <a class="menu-itm current link" href="./index.html">Studio</a>
             </li>
             <li class="menu-li">
                 <a class="menu-itm link" href="./portfolio.html">Portfolio</a>
@@ -42,20 +42,20 @@
         <div class="conteiner">
         <h1 class="solution list">Effective Solutionsfor <br>for Your Business</br></h1>
         <button class="butn link" type="button" data-modal-open>Order Service</button>
-        <ul class="model is-hidden list" data-modal>
-            <li class="model-back">
+        <div class="model is-hidden list" data-modal>
+            <div class="model-back">
                 <button class="close" data-modal-close>
                     <svg class="close-icon" width="8px" height="8px">
                         <use href="./images/close-defs.svg#icon-close-black-18dp"></use>
                     </svg>
                 </button>
-            </li>
-            <li class="mod">
+           <!-- </div>
+            <div class="mod">-->
                 <h3 class="leave">Leave your contacts and we will call you back</h3>
-                </li>
+            <!--</div>-->
             
                 <form class="model-bac">
-                    <div class="mod-1">
+                    <!--<div class="mod-1">-->
                     <label class="nam" for="name">Name
                     <span class="frame">
                     <input class="text-input" type="text" name="name" id="name" placeholder="" autofocus />
@@ -64,8 +64,8 @@
                         </svg>
                     </span>
                 </label>
-                </div>
-                    <div class="mod-1">
+                <!--</div>-->
+                    <!--<div class="mod-1">-->
                     <label class="nam" for="tel">Phone
                     <span class="frame">
                     <input class="text-input" type="tel" name="tel" id="tel" />
@@ -74,8 +74,8 @@
                     </svg>
                 </span>
                 </label>
-                    </div>
-                    <div class="mod-1">
+                    <!--</div>
+                    <div class="mod-1">-->
                     <label class="nam" for="email">Email
                     <span clase="frame">
                     <input class="text-input" type="email" name="tel" id="mail" />
@@ -84,12 +84,12 @@
                     </svg> 
                 </span>
                 </label>
-                    </div>
-                    <div class="mod-1">
+                    <!--</div>
+                    <div class="mod-1">-->
                     <label class="com" for="comment">Comment
                     <textarea name="feedback" width="100%" placeholder="Text input"></textarea>
                 </label>
-                    </div>
+                    <!--</div>-->
                       <div class="mod-15">
                         <label class="check" for="prifacy">
                             <input class="checkbox" type="checkbox" name="" id="prifacy" />
@@ -101,7 +101,7 @@
                     <button class="send-1" type="submit">Send</button>
                       <!--</div>-->
                 </form>
-        </ul>
+            </div>
     </div>
     </section>
     <section class="section">
@@ -399,8 +399,11 @@
                 <label for="name">Subscribe </label>
                 <input class="" type="e-mail" name="name" id="name" placeholder="E-mail" autofocus />
                 <!--<span class="sub-but"></span>-->
-                <button class="butt-subscrip" disabled type="button">Submit</button>
-            
+                <button class="butt-subscrip" disabled type="button">Submit
+                    <svg class="symbol" width="24px" height="20px">
+                        <use href="./images/symbol-defs (4).svg#icon-Frame-3-1"></use>
+                    </svg>
+                </button>
                 </div>
             </form>
     </div>
