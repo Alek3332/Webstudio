@@ -420,6 +420,24 @@ color: var(--description--);
 }
 .conteiner-footer {
     display: flex;
+    min-width: 320px;
+   max-width: 428px;
+   margin-left: auto;
+   margin-right: auto; 
+   /*width: 1158px;*/
+   padding-left: 16px;
+   padding-right: 16px;
+   outline: 2px solid red;
+   /* display: flex;
+    justify-content: center;
+    margin-left: auto;
+   margin-right: auto; 
+   padding-left: 15px;
+   padding-right: 15px;*/
+}
+@media only screen and (min-width: 768px) {
+    .conteiner-footer {
+        display: flex;
     /*align-items: center;*/
     justify-content: center;
     margin-left: auto;
@@ -427,6 +445,7 @@ color: var(--description--);
    /*width: 1158px;*/
    padding-left: 15px;
    padding-right: 15px;
+    }
 }
 /*.conteiner-1 {
     display: flex;
@@ -1208,20 +1227,14 @@ input[type=text]:hover {
     color: var(--customs--);
 }
 .subscrip-li {
-   /* position: absolute;
-    width: 1440px;
-    height: 310px;*/
 width: 458px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 24px;
-/* identical to box height, or 150% */
 
 letter-spacing: 0.02em;
-
-color: #FFFFFF;
 
 }
 .form-sub {
@@ -1311,10 +1324,10 @@ margin-right: 8px;
 }*/
 .menu-toggle {
     min-height: 40px;
-    min-width: 40px;
+    min-width: 249px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
     background-color: transparent;
@@ -1339,7 +1352,7 @@ margin-right: 8px;
     width: 100vw;
     height: 100vh;
     padding: 32px;
-    background-color: #3f51b5;
+    background-color: #FFFFFF;
     z-index: 999;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
@@ -1363,6 +1376,5 @@ margin-right: 8px;
   .mobile-menu .link {
     display: block;
     padding: 10px;
-    color: #fff;
-    text-decoration: none;
+    color: #000;
   }
