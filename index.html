@@ -15,7 +15,8 @@
 </head>
 <body>
     <header class="page-header">
-        <div class="conteiner">
+        <div class="header-conteiner conteiner">
+            <a class="logo-1 link" href=""><span class="blue">web</span><span class="black">studio</span></a>
     <nav class="menu-nav">
         <a class="logo link" href=""><span class="blue">web</span><span class="black">studio</span></a>
         <ul class="menu list">
@@ -34,6 +35,15 @@
         <li class="menu-info"><a class="mail link" href="tel+110001111111">+11 (000) 111-11-11</a></li>
     </ul>
     </nav>
+    <button
+          class="menu-toggle js-open-menu link"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+        
+        <svg class="hamburger" width="32px" height="22px">
+            <use href="./images/symbol-defs (7).svg#icon-charm_menu-hamburger-1-1"></use>
+        </svg>
+        </button>
     </div>
 </header>
 </head>
@@ -357,13 +367,9 @@
                 <use href="./images/close-defs.svg#icon-close-black-18dp"></use>
             </svg>
         </button>
-   <!-- </div>
-    <div class="mod">-->
         <h3 class="leave">Leave your contacts and we will call you back</h3>
-    <!--</div>-->
     
         <form class="model-bac">
-            <!--<div class="mod-1">-->
             <label class="nam" for="name">Name
             <span class="frame">
             <input class="text-input" type="text" name="name" id="name" placeholder="" autofocus />
@@ -372,8 +378,6 @@
                 </svg>
             </span>
         </label>
-        <!--</div>-->
-            <!--<div class="mod-1">-->
             <label class="nam" for="tel">Phone
             <span class="frame">
             <input class="text-input" type="tel" name="tel" id="tel" />
@@ -382,8 +386,7 @@
             </svg>
         </span>
         </label>
-            <!--</div>
-            <div class="mod-1">-->
+            
             <label class="nam" for="email">Email
             <span clase="frame">
             <input class="text-input" type="email" name="tel" id="mail" />
@@ -392,12 +395,9 @@
             </svg> 
         </span>
         </label>
-            <!--</div>
-            <div class="mod-1">-->
             <label class="com" for="comment">Comment
             <textarea class="com-text" name="feedback" width="100%" placeholder="Text input"></textarea>
-        </label>
-            <!--</div>-->
+            </label>
               <div class="mod-15">
                 <label class="check" for="prifacy">
                     <input class="checkbox" type="checkbox" name="" id="prifacy" />
@@ -405,13 +405,83 @@
                     I accept the terms and conditions of the <a class="privacy" href="">Privacy Policy</a> 
         </label>
               </div>
-              <!--<div class="send">-->
             <button class="send-1" type="submit">Send</button>
-              <!--</div>-->
         </form>
     </div>
 </div>
+  </div>
+  <!--Mobile menu-->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+        <li class="">
+            <a class=" link" href="./index.html">Studio</a>
+        </li>
+        <li class="">
+            <a class=" link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="">
+            <a class=" link" href="">Contacts</a>
+        </li>
+    </ul>
+<ul class=" list">
+    <li class=""><a class=" link" href="info@devstudio.com">info@devstudio.com</a></li>
+    <li class=""><a class=" link" href="tel+110001111111">+11 (000) 111-11-11</a></li>
+</ul>
+<ul class="social-icon list">
+    <li class="media-social">
+        <a class="social" href="">
+            <svg class="media-icon" wight="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="media-social">
+        <a class="social" href="">
+            <svg class="media-icon" wight="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="media-social">
+        <a class="social" href="">
+            <svg class="media-icon" wight="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="media-social">
+        <a class="social" href="">
+            <svg class="media-icon" wight="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+            </svg>
+        </a>
+    </li>
+</ul>
+</div>
 <script src="./modal.js"></script>
+<script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
      
