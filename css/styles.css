@@ -161,14 +161,22 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
     padding-top: 96px;
     padding-bottom: 120px;
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 428px) {
     .hero {
         padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
+@media only screen and (min-width: 767px) {
+    .hero {
+        padding-top: 64px;
+        padding-bottom: 96px;
     }
 }
 @media only screen and (min-width: 1158px) {
     .hero {
-        padding-top: 100px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 }
 .deskrip {
@@ -525,8 +533,8 @@ color: var(--description--);
 }
 .conteiner {
    /* Phone media >*/
-  /* min-width: 320px;
-   max-width: 428px;*/
+  /* min-width: 320px;*/
+   max-width: 428px;
    margin-left: auto;
    margin-right: auto; 
    /*width: 1158px;*/
@@ -561,7 +569,7 @@ color: var(--description--);
     .conteiner-footer {
         display: flex;
         min-width: 320px;
-       max-width: 428px;
+        max-width: 428px;
        margin-left: auto;
        margin-right: auto; 
        flex-wrap: wrap;
@@ -580,8 +588,8 @@ color: var(--description--);
 @media only screen and (min-width: 428px) {
 .conteiner-footer {
     display: flex;
-    min-width: 320px;
-   max-width: 428px;
+   /* min-width: 320px;*/
+   min-width: 428px;
    margin-left: auto;
    margin-right: auto; 
    flex-wrap: wrap;
@@ -599,7 +607,7 @@ color: var(--description--);
 }
 @media only screen and (min-width: 768px) {
     .conteiner-footer {
-        min-width: 768px;
+        max-width: 768px;
         display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -617,7 +625,7 @@ color: var(--description--);
         min-width: 1158px;
         display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     
     margin-left: auto;
    margin-right: auto; 
@@ -660,6 +668,7 @@ color: var(--description--);
     flex-direction: column;
     align-items: center;
     padding-bottom: 0;
+    margin-bottom: 0;
     }
 }
 /*.conteiner-1 {
@@ -926,6 +935,21 @@ color: var(--description--);
         margin-bottom: 48px;
     }
 }
+@media only screen and (min-width: 320px) {
+    .menu-img:last-child {
+        margin-bottom: 0;
+    }
+}
+@media only screen and (min-width: 428px) {
+    .menu-img:last-child {
+        margin-bottom: 0;
+    }
+}
+@media only screen and (min-width: 1158px) {
+    .menu-img:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+    }
+}
 
 .comput {
     display: flex;
@@ -948,6 +972,11 @@ color: var(--description--);
         padding-bottom: 96px;
     }
 }
+@media only screen and (min-width: 1158px) {
+    .proffi {
+        padding-bottom: 0;
+    }
+}
 .menu-prof {
     width: calc((100% - 72px) / 4);
     margin-right: 24px;
@@ -961,12 +990,14 @@ border-radius: 0px 0px 4px 4px;
 }
 @media only screen and (min-width: 320px) {
     .menu-prof:nth-child(4n) {
-        margin-right: 0;
+        margin-right: 24px;
+        
     }
 }
 @media only screen and (min-width: 428px) {
     .menu-prof:nth-child(4n) {
-        margin-right: 0;
+        margin-right: 24px;
+        margin-bottom: 0;
     }
 }
 .menu-prof {
@@ -983,6 +1014,12 @@ border-radius: 0px 0px 4px 4px;
     .menu-prof {
         height: 0%;
         margin-bottom: 72px;
+    }
+}
+@media only screen and (min-width: 767px) {
+    .menu-prof {
+        height: 0%;
+        margin-bottom: 0;
     }
 }
 .sensey {
@@ -1016,6 +1053,15 @@ border-radius: 0px 0px 4px 4px;
         background: #F4F4FD;
         padding-bottom: 0;
         padding-top: 96px;
+    }
+}
+@media only screen and (min-width: 1158px) {
+    .sensey {
+        width: 100%;
+        height: 100%;
+        background: #F4F4FD;
+        padding-top: 120px;
+    padding-bottom: 120px;
     }
 }
 .card {
@@ -1237,6 +1283,7 @@ gap: 24px;
 margin-right: 24px;
 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 @media only screen and (min-width: 320px) {
     .customs-icon {
         margin-bottom: 72px;
@@ -1251,6 +1298,46 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .customs-icon {
     
     }
+    @media only screen and (min-width: 1158px) {
+    .customs-icon {
+    margin-bottom: 0;
+    }
+}
+}.customs-icon:nth-last-child(-n + 3) {
+  margin-bottom: auto;
+}
+@media only screen and (min-width: 320px) {
+    .customs-icon:nth-last-child(-n + 3) {
+        margin-bottom: 72px;
+    }
+}
+@media only screen and (min-width: 428px) {
+    .customs-icon:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+    }
+}
+@media only screen and (min-width: 767px) {
+    .customs-icon:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+    }
+}
+.customs-icon:nth-last-child(-n + 2) {
+  margin-bottom: auto;
+}
+@media only screen and (min-width: 320px) {
+    .customs-icon:nth-last-child(-n + 2) {
+        margin-bottom: 72px;
+    }
+}
+@media only screen and (min-width: 428px) {
+    .customs-icon:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    }
+}
+@media only screen and (min-width: 767px) {
+    .customs-icon:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    }
 }
 .customs-icon:last-child {
     margin-right: auto;
@@ -1258,6 +1345,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 @media only screen and (min-width: 320px) {
     .customs-icon:last-child {
         margin-right: 24px;
+        margin-bottom: 0;
     }
 }
 @media only screen and (min-width: 428px) {
@@ -1339,6 +1427,7 @@ color:var(--primery-text--);
     .game-over {
         display: flex;
         flex-direction: column;
+        padding-bottom: 0;
     }
 }
 @media only screen and (min-width: 1158px) {
@@ -1577,6 +1666,7 @@ color: rgba(46, 47, 66, 0.4);
 border-radius: 4px;
 font-size: 12px;
 }
+
 .privacy {
     margin-left: 3px;
 }
@@ -1823,7 +1913,7 @@ letter-spacing: 0.02em;
     .subscrip-li {
             width: 100%;
     display: flex;
-    padding-right: 80px;
+   /* padding-right: 80px;*/
     flex-direction: column;
     align-items: flex-start;
     flex-direction: row;
@@ -1841,8 +1931,28 @@ letter-spacing: 0.02em;
     }
 }
 .form-sub {
-    
+    margin-left: 80px;
     padding: 0;
+}
+@media only screen and (min-width: 320px) {
+    .form-sub {
+    margin-left: 0;
+    }
+}
+@media only screen and (min-width: 428px) {
+    .form-sub {
+    margin-left: 0;
+    }
+}
+@media only screen and (min-width: 767px) {
+    .form-sub {
+    margin-left: 0;
+    }
+}
+@media only screen and (min-width: 1158px) {
+    .form-sub {
+    margin-left: 80px;
+    }
 }
 
 .name1 {
@@ -1879,7 +1989,7 @@ line-height: 1.5;
         
     }
 }
-.subscrip {
+/*.subscrip {
     
 }
 @media only screen and (min-width: 767px) {
@@ -1891,7 +2001,7 @@ line-height: 1.5;
     .subscrip {
         display: flex;
     }
-}
+}*/
 .subscrip-li input {
     margin: 0;
     padding:  4px;
