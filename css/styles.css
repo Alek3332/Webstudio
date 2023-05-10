@@ -1294,16 +1294,16 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         margin-bottom: 72px;
     }
 }
-@media only screen and (min-width: 767px) {
+/*@media only screen and (min-width: 767px) {
     .customs-icon {
     
-    }
+    }*/
     @media only screen and (min-width: 1158px) {
     .customs-icon {
     margin-bottom: 0;
     }
 }
-}.customs-icon:nth-last-child(-n + 3) {
+.customs-icon:nth-last-child(-n + 3) {
   margin-bottom: auto;
 }
 @media only screen and (min-width: 320px) {
@@ -1349,6 +1349,11 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 @media only screen and (min-width: 428px) {
+    .customs-icon:last-child {
+        margin-right: 24px;
+    }
+}
+@media only screen and (min-width: 767px) {
     .customs-icon:last-child {
         margin-right: 24px;
     }
